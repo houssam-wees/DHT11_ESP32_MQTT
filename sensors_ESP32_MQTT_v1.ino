@@ -2,12 +2,13 @@
 #include <DHT.h>
 #include <WiFi.h>
  
-const char* ssid     = "NBT-ENG_IoT"; // ESP32 and ESP8266 uses 2.4GHZ wifi only
-const char* password = "@NBT2020!n3u"; 
+const char* ssid     = ""; // ESP32 and ESP8266 uses 2.4GHZ wifi only
+const char* password = ""; 
  
 //MQTT Setup Start
 #include <PubSubClient.h>
-#define mqtt_server "192.168.10.154"
+//here you should put the ip address your MQTT broker (can be your local machine or other server) 
+#define mqtt_server ""
 WiFiClient espClient;
 PubSubClient client(espClient);
 //#define mqttTemp1 "growShed/temp1"
